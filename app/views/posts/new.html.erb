@@ -1,0 +1,67 @@
+<div class = "container-fluid">
+	<h1 class="jumbotron">New Posts:</h1>
+
+
+<% @post.errors.full_messages %>
+
+	<div class="row">
+      <div id="post-content" class="col-xs-6">
+		<%= form_for(@post) do |f| %>
+			Title:
+			<%= f.text_field  :title %><br><br>
+			Body:
+			<%= f.text_area :body, size: "40x10" %><br><br>
+
+			<%= f.submit "Create Post", class: "btn btn-success btn-lg" %>
+		<% end %>
+	  </div>
+
+	  <div id="data-content" class="col-xs-6">
+	  	<p>This portion of webpage will contain buttons.</p>
+	  	<div>
+	  		<h3>Gout Triggers</h3>
+	  	
+			  	<!-- Indicates caution should be taken with this action -->
+				<button type="button" class="btn btn-warning">Mushroom</button>
+
+				<!-- Indicates a dangerous or potentially negative action -->
+				<button type="button" class="btn btn-danger">Beer</button>
+
+				<!-- Indicates caution should be taken with this action -->
+				<button type="button" class="btn btn-warning">Asparagus</button>
+
+				<!-- Indicates a dangerous or potentially negative action -->
+				<button type="button" class="btn btn-danger">Red Meats</button>
+
+				<!-- Indicates caution should be taken with this action -->
+				<button type="button" class="btn btn-warning">Octopus</button>
+
+				<!-- Indicates a dangerous or potentially negative action -->
+				<button type="button" class="btn btn-danger">Sausage</button>
+
+				<div class="radio">
+		        <label>
+		          <input type="radio" name="loginTypeRadios" id="loginTypeNew" value="new_user">
+		          New user
+		        </label>
+      			</div>
+
+			<h3>Gout Prohibitives</h3>
+
+				<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+				<button type="button" class="btn btn-primary">Vitamin C</button>
+
+				<!-- Indicates a successful or positive action -->
+				<button type="button" class="btn btn-success">Coffee</button>
+
+				<!-- Contextual button for informational alert messages -->
+				<button type="button" class="btn btn-info">Exercise</button>
+
+
+
+
+
+	</div>
+
+
+</div>

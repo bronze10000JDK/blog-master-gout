@@ -1,0 +1,9 @@
+<% @posts.reverse.each do |post| %>
+
+<div>
+<h3><%= link_to post.title, post %></h3>
+<p><%= post.body %></p>
+<small><%= post.date_published %></small>
+</div>
+
+<% end %>
