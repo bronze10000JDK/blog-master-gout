@@ -26,6 +26,12 @@ gem 'bootstrap-sass', '~> 3.3.2'
 
 # Use MongoDB
 gem 'mongoid'
+
+# Chartkick for chart
+gem 'chartkick'
+
+gem 'groupdate'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

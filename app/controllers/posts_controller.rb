@@ -3,6 +3,12 @@ class PostsController < ApplicationController
 	def index
 
 		@posts = Post.all.order(created_at: :desc)
+
+		@hash = {}
+
+		@posts.reverse.each do |post|
+			@hash.update({post.created_at => Random.rand(11)})
+		end
 	end
 
 	def show
